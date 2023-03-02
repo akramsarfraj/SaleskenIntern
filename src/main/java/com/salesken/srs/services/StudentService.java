@@ -26,4 +26,9 @@ public class StudentService {
 	  public Optional<Student> findStudentById(int id) {
 		 return rep.findById(id);
 	  }
+	  
+	  public Student updateStudent(Student s) {
+		  return rep.save(s);
+	  }
+	  
 }
